@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Password Checker</title>
+</head>
+
+<body>
+    <div class="intro">
+        <h1>How Secure Is Your Password?</h1>
+        <p>Test your password strength. We judge passwords here — not people. (Mostly...)</p>
+        <button id="checkPassword">Check Your Password</button>
+    </div>
+
+    <div class="card">
+        <div class="inputSection">
+            <label for="password">Enter Your Password</label>
+            <div class="inputPassword">
+                <input type="password" name="password" id="password">
+                <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
+            </div>
+            <button type="submit" id="checkPass">Check Password</button>
+        </div>
+        <div class="results">
+            <div class="passStrength">
+                <h5>Password Strength: <span id="pasStr">Medium</span></h5>
+            </div>
+            <div class="checkList">
+                <h4>Password Composition</h4>
+                <div class="item" id="characters">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>At least 12 characters</p>
+                </div>
+                <div class="item" id="lowerCase">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Lowercase</p>
+                </div>
+                <div class="item" id="upperCase">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Uppercase</p>
+                </div>
+                <div class="item" id="symbols">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Symbols (?#@…)</p>
+                </div>
+                <div class="item" id="numbers">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Numbers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
